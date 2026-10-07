@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cobogó — bar e cozinha de mercado em Belo Horizonte</title>
+<meta name="description" content="Bar e cozinha de mercado em Belo Horizonte. Peixe do dia na brasa, petiscos de boteco e cachaça de alambique, com o menu escrito conforme o que chega do mercado.">
+<meta name="theme-color" content="#0d1614">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Cobogó — bar e cozinha de mercado">
+<meta property="og:description" content="Peixe do dia na brasa, petiscos de boteco e cachaça de alambique. Menu escrito conforme o mercado.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="wordmark wordmark--header" href="#topo">Cobogó</a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="#menu">Menu</a>
+      <a href="#casa">A casa</a>
+      <a href="#horarios">Horários</a>
+      <a class="btn btn--primary btn--sm" href="#reserva">Reservar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="topo" aria-labelledby="hero-titulo">
+    <div class="hero__media">
+      <img src="assets/salao-cobogo.jpg"
+           alt="A luz do fim de tarde atravessa a parede de cobogó do salão e risca o tijolo, as garrafas e o balcão."
+           width="1920" height="1281" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__panel">
+      <p class="eyebrow">Bar e cozinha de mercado · Belo Horizonte</p>
+      <h1 class="wordmark wordmark--xl" id="hero-titulo">Cobogó</h1>
+      <p class="hero__claim">Peixe do dia na brasa, petisco de boteco e cachaça de alambique. O menu é escrito conforme o que chega do mercado.</p>
+      <p class="status" data-status hidden>
+        <span class="status__dot" aria-hidden="true"></span>
+        <span data-status-text></span>
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#reserva">Reservar mesa</a>
+        <a class="btn btn--ghost" href="#menu">Ver o menu de hoje</a>
+      </div>
+    </div>
+  </section>
+
+  <aside class="strip" aria-label="Resumo da casa">
+    <div class="wrap strip__inner">
+      <ul class="strip__list">
+        <li><span class="strip__label">Endereço</span> Rua Iara Garcêz, 148 — Santo Agostinho</li>
+        <li><span class="strip__label">Cozinha</span> Último pedido às 22h30</li>
+        <li><span class="strip__label">Reserva</span> Até 30 dias antes</li>
+      </ul>
+      <a class="strip__link" href="#horarios">Ver os horários</a>
+    </div>
+  </aside>
+
+  <section class="menu" id="menu" aria-labelledby="menu-titulo">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <h2 id="menu-titulo">O menu de hoje</h2>
+        <p class="meta">Muda conforme o mercado. Atualizado em <time data-hoje></time>.</p>
+      </div>
+
+      <div class="feature" data-reveal>
+        <figure class="feature__item feature__item--wide">
+          <img src="assets/prato-moqueca.jpg"
+               alt="Moqueca de peixe servida na panela de barro, com pimentão, tomate e coentro por cima."
+               width="1920" height="1280" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Moqueca de peixe e dendê</h3>
+            <p>Peixe do dia, leite de coco, dendê e pimentão. Vai à mesa com arroz de coco e farofa de dendê.</p>
+            <p class="price-row"><span class="price">R$ 118</span> <span class="serve">serve 2</span></p>
+          </figcaption>
+        </figure>
+
+        <figure class="feature__item">
+          <img src="assets/prato-vegana.jpg"
+               alt="Moqueca de banana-da-terra na panela, com farofa de cebola e arroz branco ao lado."
+               width="1920" height="1080" loading="lazy" decoding="async">
+          <figcaption>
+            <h3>Moqueca de banana-da-terra</h3>
+            <p>A mesma panela, sem peixe: banana-da-terra, dendê e coentro, com farofa de cebola.</p>
+            <p class="price-row"><span class="price">R$ 92</span> <span class="serve">serve 2</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="menu-grid">
+        <section class="menu-group" aria-labelledby="g-petiscos" data-reveal>
+          <h3 id="g-petiscos">Petiscos</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Bolinho de mandioca com carne de sol</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 38</span>
+              </p>
+              <p class="dish__note">Seis unidades, maionese de coentro.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Torresmo de barriga com limão</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 42</span>
+              </p>
+              <p class="dish__note">Crocante por fora, com pimenta-de-bico na mesa.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Pastel de vento com queijo canastra</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 29</span>
+              </p>
+              <p class="dish__note">Três unidades, fritas na hora do pedido.</p>
+            </li>
+            <li class="dish dish--out">
+              <p class="dish__row">
+                <span class="dish__name">Língua ao vinagrete</span>
+                <span class="badge">esgotado hoje</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 46</span>
+              </p>
+              <p class="dish__note">Saiu da lousa às 20h. Volta amanhã, se o mercado mandar.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu-group" aria-labelledby="g-brasa" data-reveal>
+          <h3 id="g-brasa">Da brasa</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Costela de tira na brasa</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 96</span>
+              </p>
+              <p class="dish__note">Doze horas de fogo baixo, farofa de rapadura.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Frango com angu e ora-pro-nóbis</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 74</span>
+              </p>
+              <p class="dish__note">Panela de ferro, para dividir na mesa.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Peixe inteiro na folha de bananeira</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 132</span>
+              </p>
+              <p class="dish__note">Chega inteiro à mesa, com pirão de cabeça.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu-group" aria-labelledby="g-doces" data-reveal>
+          <h3 id="g-doces">Doces</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Doce de leite com queijo canastra</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 28</span>
+              </p>
+              <p class="dish__note">Dois cortes, servidos na temperatura da casa.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Sorvete de cagaita</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 22</span>
+              </p>
+              <p class="dish__note">Feito aqui, azedinho do jeito que a fruta é.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu-group" aria-labelledby="g-bebidas" data-reveal>
+          <h3 id="g-bebidas">Bebidas</h3>
+          <ul class="dishes">
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Caipirinha de alambique</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 32</span>
+              </p>
+              <p class="dish__note">Limão-taiti. Sem açúcar, se você preferir.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Batida de pequi</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 30</span>
+              </p>
+              <p class="dish__note">Doce, batida com gelo de coco.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Chope pilsen 300 ml</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 12</span>
+              </p>
+              <p class="dish__note">Tirado na hora, sem pressa.</p>
+            </li>
+            <li class="dish">
+              <p class="dish__row">
+                <span class="dish__name">Dose de cachaça de alambique</span>
+                <span class="dish__lead" aria-hidden="true"></span>
+                <span class="dish__price">R$ 18</span>
+              </p>
+              <p class="dish__note">Pergunte a lista do dia no balcão.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="balcao" data-reveal>
+        <figure class="balcao__media">
+          <img src="assets/balcao-caipirinha.jpg"
+               alt="Caipirinha com limão e gelo ao lado de uma garrafa de cachaça de alambique, sobre o balcão."
+               width="1280" height="1707" loading="lazy" decoding="async">
+        </figure>
+        <div class="balcao__text">
+          <h3>Do balcão</h3>
+          <p>Trinta rótulos de cachaça de alambique, de Minas e da Bahia, servidos em dose ou em caipirinha. A lista muda quando o rótulo acaba, e a gente avisa antes de tirar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="casa" id="casa" aria-labelledby="casa-titulo">
+    <div class="wrap casa__grid">
+      <div class="casa__text" data-reveal>
+        <h2 id="casa-titulo">A casa</h2>
+        <p>Ocupamos uma loja antiga de mercado, com pé-direito alto e uma parede inteira de cobogó. No fim da tarde a luz atravessa e desenha o chão do salão. A casa ficou com o nome da parede.</p>
+        <p>Não temos freezer grande nem carta fixa. A cozinha compra de manhã, escreve a lousa e fecha quando o peixe acaba. Se um prato sai da lista no meio da noite, é porque acabou de verdade.</p>
+        <dl class="facts">
+          <div class="facts__item">
+            <dt>Lugares</dt>
+            <dd>48, sendo 12 no balcão</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Cachaças</dt>
+            <dd>30 rótulos</dd>
+          </div>
+          <div class="facts__item">
+            <dt>Cozinha</dt>
+            <dd>Último pedido às 22h30</dd>
+          </div>
+        </dl>
+      </div>
+      <figure class="casa__media" data-reveal>
+        <img src="assets/salao-noite.jpg"
+             alt="Salão à noite: pessoas sentadas às mesas e no balcão, sob as lâmpadas penduradas."
+             width="1920" height="1281" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <section class="reserva" id="reserva" aria-labelledby="reserva-titulo">
+    <div class="wrap reserva__grid">
+      <div class="reserva__intro" data-reveal>
+        <h2 id="reserva-titulo">Reservar mesa</h2>
+        <p>Guardamos mesa até 30 dias antes. Para grupos acima de 8 pessoas, ligue: a gente monta a mesa comprida do fundo.</p>
+        <dl class="contact">
+          <div class="contact__item">
+            <dt>Telefone</dt>
+            <dd>(31) 3322-1040</dd>
+          </div>
+          <div class="contact__item">
+            <dt>Endereço</dt>
+            <dd>Rua Iara Garcêz, 148 — Santo Agostinho</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="reserva__panel" data-reveal>
+        <form class="reserva__form" data-form novalidate>
+          <div class="field">
+            <label for="r-data">Data</label>
+            <input id="r-data" name="data" type="date" required autocomplete="off">
+            <p class="field__error" id="e-data" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="r-hora">Hora</label>
+            <select id="r-hora" name="hora" required>
+              <option value="">Escolha a hora</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+              <option>21:30</option>
+              <option>22:00</option>
+            </select>
+            <p class="field__error" id="e-hora" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="r-pessoas">Pessoas</label>
+            <select id="r-pessoas" name="pessoas" required>
+              <option value="">Quantas pessoas</option>
+              <option value="1">1 pessoa</option>
+              <option value="2">2 pessoas</option>
+              <option value="3">3 pessoas</option>
+              <option value="4">4 pessoas</option>
+              <option value="5">5 pessoas</option>
+              <option value="6">6 pessoas</option>
+              <option value="7">7 pessoas</option>
+              <option value="8">8 pessoas</option>
+            </select>
+            <p class="field__error" id="e-pessoas" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="r-nome">Nome</label>
+            <input id="r-nome" name="nome" type="text" required minlength="3" autocomplete="name" placeholder="Como devemos chamar você">
+            <p class="field__error" id="e-nome" hidden></p>
+          </div>
+
+          <div class="field field--wide">
+            <label for="r-fone">Telefone</label>
+            <input id="r-fone" name="telefone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="(31) 90000-0000">
+            <p class="field__error" id="e-fone" hidden></p>
+          </div>
+
+          <p class="form__hint">Confirmamos por telefone em até uma hora. Se for para hoje, chame no balcão pelo mesmo número.</p>
+
+          <p class="form__summary" data-form-summary role="alert" hidden></p>
+
+          <button class="btn btn--primary btn--block" type="submit" data-submit>Confirmar reserva</button>
+        </form>
+
+        <div class="reserva__done" data-done hidden tabindex="-1" role="status">
+          <h3>Mesa guardada</h3>
+          <dl class="reserva__summary">
+            <div><dt>Nome</dt><dd data-done-nome></dd></div>
+            <div><dt>Quando</dt><dd data-done-quando></dd></div>
+            <div><dt>Pessoas</dt><dd data-done-pessoas></dd></div>
+            <div><dt>Telefone</dt><dd data-done-fone></dd></div>
+          </dl>
+          <p>Confirmamos pelo telefone informado em até uma hora. Se mudar de ideia, é só responder por lá.</p>
+          <button class="btn btn--ghost-dark" type="button" data-reset>Fazer outra reserva</button>
+        </div>
+
+        <div class="reserva__failed" data-failed hidden tabindex="-1" role="alert">
+          <h3>Não conseguimos enviar agora</h3>
+          <p>Sua reserva não foi registrada. Confira a conexão e tente de novo, ou ligue para (31) 3322-1040.</p>
+          <button class="btn btn--primary" type="button" data-retry>Tentar de novo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="horarios">
+  <div class="cobogo-frieze" aria-hidden="true"></div>
+  <div class="wrap footer__grid">
+    <div class="footer__col">
+      <p class="wordmark wordmark--footer">Cobogó</p>
+      <p class="footer__line">Bar e cozinha de mercado</p>
+      <p class="footer__line">Rua Iara Garcêz, 148 — Santo Agostinho<br>Belo Horizonte / MG</p>
+      <p class="footer__line">(31) 3322-1040</p>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__heading">Horários</h2>
+      <table class="hours">
+        <caption class="sr-only">Horário de funcionamento por dia da semana</caption>
+        <tbody>
+          <tr><th scope="row">Segunda</th><td>Fechado</td></tr>
+          <tr><th scope="row">Terça a quinta</th><td><time>18h</time> — <time>23h</time></td></tr>
+          <tr><th scope="row">Sexta</th><td><time>18h</time> — <time>1h</time></td></tr>
+          <tr><th scope="row">Sábado</th><td><time>12h</time> — <time>1h</time></td></tr>
+          <tr><th scope="row">Domingo</th><td><time>12h</time> — <time>17h</time></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__heading">Créditos</h2>
+      <details class="credits">
+        <summary>Ver as fotografias e licenças</summary>
+        <ul>
+          <li>Salão — Daniel G Rego, CC BY-SA 4.0</li>
+          <li>Moqueca de peixe — BR, CC BY-SA 4.0</li>
+          <li>Moqueca de banana-da-terra — Melsj, CC BY-SA 4.0</li>
+          <li>Caipirinha e cachaça — Hg1982, CC BY-SA 4.0</li>
+        </ul>
+        <p>Fotografias do Wikimedia Commons, sob <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Sem alteração das imagens originais.</p>
+      </details>
+      <p class="footer__note">Cobogó é um projeto fictício, feito para demonstração.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
