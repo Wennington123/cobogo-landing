@@ -637,6 +637,47 @@ main [id], footer [id] { scroll-margin-top: 5.5rem; }
   color: var(--text-700);
 }
 
+.whatsapp-card {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 72px;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #25d366;
+  background: color-mix(in oklab, #25d366 8%, var(--paper-100));
+  color: var(--text-900);
+  text-decoration: none;
+  transition: background-color 0.18s var(--ease), border-color 0.18s var(--ease), transform 0.18s var(--ease);
+}
+
+.whatsapp-card:hover {
+  background: color-mix(in oklab, #25d366 15%, var(--paper-100));
+  border-color: #1eaa53;
+  transform: translateY(-2px);
+}
+
+.whatsapp-card__icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: #25d366;
+  color: #062d16;
+}
+
+.whatsapp-card__icon svg { width: 1.5rem; height: 1.5rem; fill: currentColor; }
+
+.whatsapp-card strong,
+.whatsapp-card small { display: block; }
+
+.whatsapp-card strong { font-size: 0.9375rem; }
+.whatsapp-card small { margin-top: 0.15rem; font-size: 0.8125rem; color: var(--text-700); }
+
+.whatsapp-card__arrow { font-size: 1.25rem; color: #168a42; }
+
 .contact {
   display: grid;
   gap: 0.9rem;
