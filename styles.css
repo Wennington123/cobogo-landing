@@ -228,6 +228,17 @@ main [id], footer [id] { scroll-margin-top: 5.5rem; }
   .site-nav a:not(.btn) { display: none; }
 }
 
+@media (max-width: 359px) {
+  .hero__panel { padding-bottom: 2rem; }
+  .hero__actions { display: grid; width: 100%; }
+  .hero__actions .btn { width: 100%; }
+  .hero__claim { font-size: 1rem; }
+}
+
+@media (min-width: 360px) and (max-width: 639px) {
+  .hero__actions .btn { padding-inline: 1rem; }
+}
+
 /* ---------- hero ---------- */
 
 .hero {
